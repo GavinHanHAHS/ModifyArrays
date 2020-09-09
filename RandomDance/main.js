@@ -7,7 +7,10 @@ cnv.width = 800;
 cnv.height = 600;
 
 // Global Variables
-let myArray = [300, 300, 300, 300, 300, 300, 300, 300, 300, 300, 300, 300, 300, 300, 300];
+let myArray = [];
+for (let i = 0; i < 100; i++) {
+    myArray.push(300);
+}
 console.log(myArray.length);
 
 // Main Program Loop

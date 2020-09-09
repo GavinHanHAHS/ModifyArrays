@@ -7,7 +7,11 @@ cnv.width = 800;
 cnv.height = 600;
 
 // Global Variables
-let grades = [60, 70, 45, 20, 40, 90, 100, 30, 45, 75, 40, 80];
+let grades = [];
+for (i = 0; i < 50; i++) {
+    grades.push(Math.random() * 101);
+}
+
 let max = 100; // grade values should be b/t 0 and max
 
 // Main Program Loop
