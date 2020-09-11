@@ -7,7 +7,7 @@ cnv.width = 800;
 cnv.height = 600;
 
 // Global Variables
-let myArray = [400, 400, 400, 400, 200, 200, 200, 400, 200, 200, 200, 200, 400];
+let myArray = [200, 200, 200, 400, 200, 200, 200, 400, 200, 200, 200, 200, 200];
 
 
 // Main Program Loop
@@ -47,10 +47,10 @@ function keyEventHandler(event) {
     }
 
     if(event.code == "Digit2") {
-        for (let i = 0; i < myArray.length; i++) {
+        for (let i = myArray.length; i >= 0; i--) {
             if(myArray[i] == 200) {
                 myArray.splice(i, 1);
-                i--;
+                //i--;
             }
         }
     }
